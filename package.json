@@ -1,0 +1,72 @@
+{
+  "name": "macro-helper",
+  "displayName": "C Macro Helper",
+  "description": "Extension for easier creation of multiline macros for C/C++",
+  "version": "0.0.1",
+  "publisher": "duckysmacky",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cpp"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "macroHelper.alignMacroContinuations",
+        "title": "Macro Helper: Add and Align Backslashes",
+        "category": "Macro Helper"
+      },
+      {
+        "command": "macroHelper.alignMacroDefinition",
+        "title": "Macro Helper: Finalize Multiline Macro",
+        "category": "Macro Helper"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "macroHelper.alignMacroContinuations",
+        "key": "ctrl+alt+\\",
+        "mac": "cmd+alt+\\",
+        "when": "editorTextFocus && !editorReadonly && (editorLangId == c || editorLangId == cpp)"
+      },
+      {
+        "command": "macroHelper.alignMacroDefinition",
+        "key": "ctrl+alt+shift+\\",
+        "mac": "cmd+alt+shift+\\",
+        "when": "editorTextFocus && !editorReadonly && (editorLangId == c || editorLangId == cpp)"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "macroHelper.alignMacroContinuations",
+          "when": "editorTextFocus && !editorReadonly && (resourceLangId == c || resourceLangId == cpp)",
+          "group": "modification@10"
+        },
+        {
+          "command": "macroHelper.alignMacroDefinition",
+          "when": "editorTextFocus && !editorReadonly && (resourceLangId == c || resourceLangId == cpp)",
+          "group": "modification@11"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "C Macro Helper",
+      "properties": {
+        "macroHelper.alignmentGap": {
+          "type": "integer",
+          "default": 8,
+          "minimum": 1,
+          "description": "How many spaces to leave between the longest macro line and the aligned backslash column."
+        }
+      }
+    }
+  }
+}
