@@ -16,6 +16,10 @@
     "onLanguage:cpp"
   ],
   "main": "./extension.js",
+  "scripts": {
+    "check": "node --check extension.js && node --check src/formatter.js && node --check test/formatter.test.js",
+    "test": "node --test"
+  },
   "contributes": {
     "commands": [
       {
