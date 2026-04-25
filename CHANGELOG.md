@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.1
+
+- Updated project's icon to be transparent
+
 ## 1.0.0
 
 Initial public release of C Macro Helper

@@ -2,7 +2,7 @@
   "name": "macro-helper",
   "displayName": "C Macro Helper",
   "description": "Extension for easier creation of multiline macros for C/C++",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "nikdor",
   "icon": "assets/icon-transparent.png",
   "engines": {
