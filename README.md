@@ -2,6 +2,8 @@
 
 C Macro Helper (or just Macro Helper) is a VS Code extension focused on making the creation of C/C++ multiline macros less tedious
 
+## About
+
 This extension aims to eliminate the problem of needing to manually add and align backslashes (`\`) to the end of each multiline macro's line.
 
 It provides two commands:
@@ -10,6 +12,11 @@ It provides two commands:
 - `Macro Helper: Finalize Multiline Macro`
 
 Both commands align the backslashes into a single vertical column, with a configurable gap from the longest line in the block
+
+## Installation
+
+- Install C Macro Helper from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=nikdor.macro-helper)
+- Or download the latest `.vsix` file from the [GitHub releases page](https://github.com/duckysmacky/macro-helper/releases/latest).
 
 ## Example usage
 
