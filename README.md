@@ -1,4 +1,21 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/duckysmacky/macro-helper/master/assets/icon-transparent.png" alt="C Macro Helper icon" width="300">
+</p>
+
 # C Macro Helper
+
+<p align="center">
+  <a href="https://github.com/duckysmacky/macro-helper/releases/latest">
+    <img src="https://img.shields.io/github/v/release/duckysmacky/macro-helper?label=release&logo=github" alt="Latest GitHub release">
+  </a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=nikdor.macro-helper">
+    <img src="https://img.shields.io/badge/marketplace-nikdor.macro--helper-blue" alt="Visual Studio Marketplace">
+  </a>
+  <img src="https://img.shields.io/badge/VS%20Code-%5E1.74.0-blue" alt="VS Code version">
+  <a href="https://github.com/duckysmacky/macro-helper/actions/workflows/test.yml">
+    <img src="https://github.com/duckysmacky/macro-helper/actions/workflows/test.yml/badge.svg" alt="Test workflow status">
+  </a>
+</p>
 
 C Macro Helper (or just Macro Helper) is a VS Code extension focused on making the creation of C/C++ multiline macros less tedious
 

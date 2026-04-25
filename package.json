@@ -4,7 +4,7 @@
   "description": "Extension for easier creation of multiline macros for C/C++",
   "version": "1.0.0",
   "publisher": "nikdor",
-  "icon": "assets/extension-icon.png",
+  "icon": "assets/icon-transparent.png",
   "engines": {
     "vscode": "^1.74.0"
   },
