@@ -2,21 +2,40 @@
   "name": "macro-helper",
   "displayName": "C Macro Helper",
   "description": "Extension for easier creation of multiline macros for C/C++",
-  "version": "0.0.1",
-  "publisher": "duckysmacky",
+  "version": "1.0.0",
+  "publisher": "nikdor",
+  "icon": "assets/extension-icon.png",
   "engines": {
-    "vscode": "^1.88.0"
+    "vscode": "^1.74.0"
   },
   "categories": [
     "Programming Languages",
-    "Other"
+    "Formatters"
   ],
+  "keywords": [
+    "c",
+    "cpp",
+    "c++",
+    "macro",
+    "multiline-macro",
+    "preprocessor",
+    "backslash",
+    "alignment",
+    "formatter",
+    "cplusplus"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/duckysmacky/macro-helper.git"
+  },
+  "homepage": "https://github.com/duckysmacky/macro-helper",
   "activationEvents": [
     "onLanguage:c",
     "onLanguage:cpp"
   ],
   "main": "./extension.js",
   "scripts": {
+    "vscode:prepublish": "npm run check && npm test",
     "check": "node --check extension.js && node --check src/formatter.js && node --check test/formatter.test.js",
     "test": "node --test"
   },
